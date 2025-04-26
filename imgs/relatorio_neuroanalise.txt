@@ -1,0 +1,37 @@
+
+Relatório de Classificação - Modelo Naive Bayes
+
+Introdução:
+Este relatório descreve o desempenho do modelo de classificação baseado no algoritmo Naive Bayes aplicado ao conjunto de dados de artistas do Spotify. O objetivo principal é classificar os artistas em diferentes faixas de popularidade com base em características como popularidade, número de gêneros e número de seguidores logaritmizados.
+
+1. Descrição do Modelo:
+Utilizamos o Gaussian Naive Bayes (GNB) para classificar os artistas em 8 categorias distintas de popularidade. O modelo foi treinado utilizando um conjunto de dados que contém informações sobre as características dos artistas e as suas respectivas classificações de popularidade.
+
+2. Métricas de Avaliação:
+Relatório de Classificação:
+
+{relatorio_classificacao}
+
+3. Interpretação das Métricas:
+- Alta Popularidade: Embora a precisão para essa classe seja boa (0.83), o modelo obteve um recall perfeito (1.00), indicando que ele conseguiu identificar corretamente todos os casos de alta popularidade entre os poucos exemplos disponíveis.
+- Artistas de Nicho: Esta classe obteve uma excelente performance, com precisão de 0.98 e recall de 0.96, o que significa que o modelo conseguiu identificar quase todos os artistas de nicho e classificou corretamente a maioria deles.
+- Descobertas Locais: A classe "Descobertas Locais" também teve um ótimo desempenho, com precisão e recall superiores a 0.97, evidenciando que o modelo foi eficaz ao prever esse tipo de artista.
+- Superestrelas: A classe "Superestrelas" apresentou um desempenho muito baixo, com precisão e recall de 0.00. Isso ocorre provavelmente porque há poucos exemplos dessa classe no conjunto de dados (apenas 2 instâncias), o que dificulta a capacidade do modelo de prever corretamente essa classe.
+
+4. Matriz de Confusão:
+A matriz de confusão foi gerada para ilustrar como o modelo se comportou na classificação das diferentes faixas de popularidade.
+
+5. Insights:
+- O modelo demonstrou um bom desempenho geral, com uma acurácia de 94%, o que indica que o modelo está classificando corretamente a maioria dos artistas nas faixas de popularidade.
+- Algumas classes com poucos exemplos (como "Alta Popularidade" e "Superestrelas") mostraram menor desempenho, sugerindo que seria útil aumentar o número de exemplos dessas classes para melhorar a robustez do modelo.
+
+6. Visualizações:
+A matriz de confusão e o gráfico de distribuição das classes reais vs. previstas foram salvos como imagens.
+
+Conclusão:
+O modelo Naive Bayes provou ser eficaz para a classificação de artistas em faixas de popularidade, alcançando uma boa acurácia de 94%. Contudo, algumas classes específicas, como "Superestrelas", apresentaram dificuldades devido à baixa quantidade de dados, o que limita a capacidade do modelo de aprender essas classes de maneira eficaz.
+
+Arquivos Gerados:
+1. Relatório de Classificação: relatorio_classificacao.txt
+2. Matriz de Confusão: matriz_confusao.png
+3. Distribuição de Classes Reais vs Previsão: distribuicao_classes.png
